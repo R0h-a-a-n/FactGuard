@@ -2,6 +2,7 @@ import praw
 from kafka import KafkaProducer
 import json
 import time
+import os
 
 reddit = praw.Reddit(
     client_id = os.getenv("REDDIT_CLIENT_ID"),
